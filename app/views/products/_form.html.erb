@@ -1,0 +1,27 @@
+<%= form_for(@object) do |f| %>
+  <%=hidden_field_tag 'dataFormStore', nil,:data=>@object.get_html5_data %> 
+
+  <div class="field">
+   <%= f.label :name %>
+    <%= f.text_field :name, id:'create',class:'edit_in_place', :data=> named_as(:name) %>
+  </div>
+  <div class="field">
+  <%= f.label :title %>
+    <%= f.text_field :title,class:'edit_in_place', :data=> named_as(:title) %>
+  </div>
+  <div class="field">
+  <%= f.label :description %>
+    <%= f.text_field :description, class:'edit_in_place disabled', :data=> named_as(:description) %>
+  </div>
+  <div class="field">
+    <%= f.label :prominent %>
+    <%= f.check_box :prominent, class:'edit_in_place_checkbox_single disabled', :data=> named_as(:prominent) %>
+  </div>
+  <div class="field">
+    <%= f.label :expiration_date %>
+    <%= f.text_field :expiration_date, class:'edit_in_place datePicker disabled', :data=> named_as(:expiration_date) %>
+  </div>
+<% end %>
+
+
+

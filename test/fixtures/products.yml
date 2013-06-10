@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  title: MyString
+  content: MyText
+  radio: false
+  expiration_date: 2013-06-10
+
+two:
+  name: MyString
+  title: MyString
+  content: MyText
+  radio: false
+  expiration_date: 2013-06-10
